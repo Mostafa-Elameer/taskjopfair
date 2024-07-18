@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task JopFir</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+    <h1 class="text-center py-5 text-white">Customer Transaction System</h1>
+   <!-- inputs -->
+    <section class="container ">
+        <div class="row row-cols-2">
+            <div class=" my-3">
+                <div class="name">
+                    <input data-search="name" class="form-control" placeholder="Enter Customer Name" type="text">
+                </div>
+            </div>
+            <div class=" my-3">
+                <div class="amount">
+                    <input data-search="amount" class="form-control" placeholder="Enter Amount of Transaction" type="text">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- table -->
+    <section class="container py-5 fw-bold">
+        <table class="w-100 border text-center">
+            <thead>
+                <th>Transaction Id</th>
+                <th>Customer Name</th>
+                <th>Customer Id</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Show Graph</th>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+    </section>
+    <!-- chart -->
+    <section class="container">
+        <div id="chart"></div>     
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
